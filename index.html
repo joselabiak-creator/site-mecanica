@@ -1,1 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oficina Mecânica - Agendamento</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <header>
+        <h1>Agende seu horário aqui</h1>
+    </header>
+
+    <main>
+        
+        <section class="intro-section">
+            <p><strong>Mecânica com os melhores profissionais e os produtos de melhor qualidade.</strong></p>
+            <p>A mecânica está localizada na Rua Marechal Floriano, número 870. Marque seu horário pelo site ou presencialmente.</p>
+            
+            <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?w=600" alt="Fotografia do interior de uma oficina mecânica com ferramentas">
+            
+            <p>A nossa mecânica está preparada para atender você melhor. Temos uma sala confortável para nossos clientes aguardarem.</p>
+        </section>
+         
+        <section>
+            <h2>Nossos Serviços</h2>
+            <p>Em nossa mecânica oferecemos os seguintes serviços especializados:</p>
+            <ul class="services-list">  
+                <li>Troca de óleo</li>
+                <li>Troca de pneus</li>
+                <li>Alinhamento</li>
+                <li>Balanceamento</li>
+                <li>Revisão completa</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Horários de Atendimento</h2>
+            <div class="table-container">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Dia da Semana</th>
+                            <th>Horário de Funcionamento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda a Sexta</td>
+                            <td>8h às 18h</td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td>8h às 12h</td>
+                        </tr>
+                        <tr>
+                            <td>Domingo</td>
+                            <td><span class="status-closed">Fechado</span></td>
+                        </tr>
+                        <tr>
+                            <td>Feriados</td>
+                            <td><span class="status-closed">Fechado</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Entre em Contato</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefone">Telefone / WhatsApp</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensagem">Mensagem / Detalhes do Veículo</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva o que seu veículo precisa..." required></textarea>
+                </div>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Vídeo da Nossa Oficina</h2>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/RxPlL3JWobo" 
+                    title="Apresentação da Oficina Mecânica" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+
+        <section>
+            <h2>Localização</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.244795292437!2d-51.217318!3d-30.034647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAyJzA0LjciUyA1McKwMTMnMDIuMyJX!5e0!3m2!1spt-BR!2sbr!4v1625000000000!5m2!1spt-BR!2sbr" 
+                    title="Mapa de Localização da Oficina"
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Oficina Mecânica. Trabalho desenvolvido para fins educacionais - Curso Técnico em Desenvolvimento de Sistemas.</p>
+    </footer>
+
+</body>
+</html>
